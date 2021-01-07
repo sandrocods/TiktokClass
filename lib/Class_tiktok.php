@@ -131,7 +131,7 @@ class TiktokDownloader
             ],
             null
             );
-            $filename = ".\\TiktokClass\\tmp\\" . $VideoID . ".mp4";
+            $filename = ".\\tmp\\" . $VideoID . ".mp4";
             $d = fopen($filename, "w");
             $fwrite = fwrite($d, $curl['Body']);
             fclose($d);
